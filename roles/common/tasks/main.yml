@@ -2,6 +2,12 @@
 - name: Update and upgrade Homebrew
   homebrew: update_homebrew=yes upgrade_all=yes
 
+- name: Tap Caskroom
+  homebrew_tap: tap=caskroom/cask
+
+- name: Maintain Homebrew Caskroom
+  homebrew: name=brew-cask
+
 - name: Maintain Ansible
   homebrew: name=ansible
 
@@ -43,6 +49,12 @@
 
 - name: Maintain Chrome
   homebrew_cask: name=google-chrome
+
+- name: Maintain Firefox
+  homebrew_cask: name=firefox
+
+- name: Maintain Alfred
+  homebrew_cask: name=alfred
 
 - name: Tap Completions
   homebrew_tap: tap=homebrew/completions 
