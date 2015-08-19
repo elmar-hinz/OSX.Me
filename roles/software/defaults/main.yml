@@ -1,0 +1,45 @@
+---
+
+gems:
+  - tmuxinator
+
+homebrew_packages: 
+  - tmux
+  - vim
+  - vimpager
+  - docker
+  - docker-compose
+
+homebrew_casks:
+  - alfred
+  - firefox
+  - google-chrome
+  - virtualbox
+  - vagrant
+      
+homebrew_completions:
+  - aptly-completion
+  - boom-completion
+  - boot2docker-completion
+  - bundler-completion
+  - cargo-completion
+  - ctest-completion
+  - django-completion
+  - docker-completion
+  - fabric-completion
+  - gem-completion
+  - grunt-completion
+  - kitchen-completion
+  - maven-completion
+  - packer-completion
+  - pip-completion
+  - rails-completion
+  - rake-completion
+  - ruby-completion
+  - rustc-completion
+  - sonar-completion
+  - spring-completion
+  - tmuxinator-completion
+  - vagrant-completion
+  - wpcli-completion
+

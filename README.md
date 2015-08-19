@@ -1,2 +1,4 @@
-# AnsibleOSX
-Experimental: learning ansible to control mac adminsitration
+# Maintain my Mac with Ansible
+
+Status: alpha
+

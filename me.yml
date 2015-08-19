@@ -1,0 +1,8 @@
+---
+
+- name: Me Playbook
+  hosts: localhost 
+  roles:
+    - bootstrap
+    - software
+

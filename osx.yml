@@ -1,7 +1,0 @@
----
-
-- name: OSX TYPO3
-  hosts: localhost 
-  roles:
-    - common
-

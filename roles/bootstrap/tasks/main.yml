@@ -1,0 +1,35 @@
+
+- name: Update and upgrade Homebrew
+  homebrew: update_homebrew=yes upgrade_all=yes
+  when: "{{ quick }} == false"
+
+- name: Tap Completitions
+  homebrew_tap: tap=homebrew/completions
+
+- name: Tap Caskroom
+  homebrew_tap: tap=caskroom/cask
+
+- name: Maintain Homebrew Caskroom
+  homebrew: name=brew-cask
+
+- name: Maintain Fundamental Commandline Tools 
+  homebrew: name=wget
+
+- name: Maintain Python 
+  homebrew: name=python
+
+- name: Maintain Ruby 
+  homebrew: name=ruby
+
+- name: Maintain Git
+  homebrew: name=git
+
+- name: Maintain Bash
+  homebrew: name=bash,bash-completion
+
+- name: Maintain Ansible
+  homebrew: name=ansible
+
+- name: Maintain Iterm2 
+  homebrew_cask: name=iterm2
+
