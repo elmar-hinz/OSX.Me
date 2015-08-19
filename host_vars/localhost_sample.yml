@@ -4,6 +4,8 @@
 # Customize to your neeeds. Overwrite the default vars of roles.
 # `host_vars/localhost.yml`  is excluded from the git repository by .gitignore.
 
+# dotfiles_repository: https://github.com/your-name/dotfiles.git  
+
 gems:
   - tmuxinator
 

@@ -1,0 +1,4 @@
+---
+# Your local dotfiles git repository will go here:
+dotfiles_repository_destination: '~/.my.dotfiles'
+

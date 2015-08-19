@@ -7,4 +7,6 @@
   roles:
     - bootstrap
     - software
+    - { role: dotfiles, when: dotfiles_repository is defined  }
+
 
