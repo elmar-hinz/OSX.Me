@@ -2,6 +2,8 @@
 
 - name: Me Playbook
   hosts: localhost 
+  vars:
+    brew_upgrade: true
   roles:
     - bootstrap
     - software

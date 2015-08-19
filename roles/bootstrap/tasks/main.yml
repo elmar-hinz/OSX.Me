@@ -1,7 +1,7 @@
 
 - name: Update and upgrade Homebrew
   homebrew: update_homebrew=yes upgrade_all=yes
-  when: "{{ quick }} == false"
+  when: brew_upgrade
 
 - name: Tap Completitions
   homebrew_tap: tap=homebrew/completions

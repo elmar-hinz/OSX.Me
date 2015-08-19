@@ -1,2 +1,4 @@
 .DS_Store
+# Private configuration goes here
+host_vars/localhost.yml
 
