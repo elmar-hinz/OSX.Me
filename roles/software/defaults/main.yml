@@ -22,7 +22,6 @@ homebrew_completions:
   - boom-completion
   - boot2docker-completion
   - bundler-completion
-  - cargo-completion
   - ctest-completion
   - django-completion
   - docker-completion
