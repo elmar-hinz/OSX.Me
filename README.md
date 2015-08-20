@@ -48,6 +48,7 @@ Customize to your neeeds. Overwrite the default vars of roles.
 * `dotfiles_repository` should point to your git dotfiles repository 
   i.e. https://github.com/your-name/dotfiles.git
 * It is cloned into `~/.my.dotfiles` by default.
+* Cloning is done recursivly to pull submodules like vim bundles.
 
 The principle is simple: 
 
@@ -65,6 +66,7 @@ Details:
 * Excluded: 
 	* `.git`
 	* `.gitignore`
+	* `.gitmodules`
 	* `.DS_Store`
 * Security: 
 	* It refuses to change existing files or directories in `~/` to symlinks.

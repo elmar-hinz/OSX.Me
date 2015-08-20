@@ -3,6 +3,7 @@
 - name: Synchronize Dotfile Repository
   git: repo={{ dotfiles_repository }}
      dest={{ dotfiles_repository_destination }}
+     recursive=yes
 
 - name: Linking Dotfiles
   file: state=link src={{ item }} 
@@ -17,6 +18,7 @@
           -name ".DS_Store" 
           -or -name ".git"  
           -or -name ".gitignore"  
+          -or -name ".gitmodules"  
       \)
       || true
 
