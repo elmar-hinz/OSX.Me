@@ -4,6 +4,7 @@
   git: repo={{ dotfiles_repository }}
      dest={{ dotfiles_repository_destination }}
      recursive=yes
+     accept_hostkey=yes
 
 - name: Linking Dotfiles
   file: state=link src={{ item }} 
