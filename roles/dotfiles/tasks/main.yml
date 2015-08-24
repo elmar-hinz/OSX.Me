@@ -9,6 +9,7 @@
 - name: Linking Dotfiles
   file: state=link src={{ item }} 
     dest={{ ansible_env.HOME }}/{{ item | basename }} 
+    force=yes
   with_lines: 
       test -e {{ dotfiles_repository_destination }}
       && find {{ dotfiles_repository_destination }}
