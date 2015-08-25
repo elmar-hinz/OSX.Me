@@ -9,8 +9,7 @@
 gems:
   - tmuxinator
 
-homebrew_packages: 
-  - homebrew/science
+homebrew_taps: []
 
 homebrew_packages: 
   - tmux
@@ -26,6 +25,9 @@ homebrew_casks:
   - virtualbox
   - vagrant
       
+# Casks that need admin priviledges
+homebrew_casks_become: []
+
 homebrew_completions:
   - aptly-completion
   - boom-completion

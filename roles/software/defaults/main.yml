@@ -3,6 +3,8 @@
 gems:
   - tmuxinator
 
+homebrew_taps: []
+
 homebrew_packages: 
   - tmux
   - vim
@@ -17,6 +19,8 @@ homebrew_casks:
   - virtualbox
   - vagrant
       
+homebrew_casks_become: []
+
 homebrew_completions:
   - aptly-completion
   - boom-completion

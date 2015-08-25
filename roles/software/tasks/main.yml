@@ -16,6 +16,11 @@
   homebrew_cask: name={{ item }} 
   with_items: "{{ homebrew_casks }}"
 
+- name: Maintain Homebrew Admin Casks 
+  homebrew_cask: name={{ item }} 
+  with_items: "{{ homebrew_casks_become }}"
+  become: true
+
 - name: Maintain Gems
   gem: name={{ item }} 
   with_items: "{{ gems }}"
