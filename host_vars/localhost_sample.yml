@@ -10,6 +10,9 @@ gems:
   - tmuxinator
 
 homebrew_packages: 
+  - homebrew/science
+
+homebrew_packages: 
   - tmux
   - vim
   - vimpager
