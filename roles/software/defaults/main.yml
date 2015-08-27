@@ -2,6 +2,11 @@
 
 gems:
   - tmuxinator
+    
+npms: 
+  - bower
+  - grunt
+  - grunt-cli
 
 homebrew_taps: []
 
@@ -13,7 +18,6 @@ homebrew_packages:
   - docker-compose
   - php56
   - composer
-  - npm
 
 homebrew_casks:
   - alfred
@@ -48,4 +52,6 @@ homebrew_completions:
   - tmuxinator-completion
   - vagrant-completion
   - wpcli-completion
+
+
 

@@ -9,6 +9,11 @@
 gems:
   - tmuxinator
 
+npms:
+  - bower
+  - grunt
+  - grunt-cli
+
 homebrew_taps: []
 
 homebrew_packages: 

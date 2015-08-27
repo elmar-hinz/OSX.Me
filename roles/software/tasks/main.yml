@@ -25,3 +25,7 @@
   gem: name={{ item }} 
   with_items: "{{ gems }}"
 
+- name: Maintain Node.js Packages
+  npm: name={{ item }} global=yes
+  with_items: "{{ npms }}"
+

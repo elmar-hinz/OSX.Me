@@ -24,6 +24,9 @@
 - name: Maintain Ruby 
   homebrew: name=ruby
 
+- name: Maintan node.js
+  homebrew: name=node
+
 - name: Maintain Git
   homebrew: name=git
 
