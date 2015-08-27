@@ -12,8 +12,11 @@
 - name: Maintain Homebrew Caskroom
   homebrew: name=brew-cask
 
+- name: Maintain Build Tools
+  homebrew: name=coreutils
+
 - name: Maintain Fundamental Commandline Tools 
-  homebrew: name=wget
+  homebrew: name=wget,htop-osx
 
 - name: Maintain Python 
   homebrew: name=python

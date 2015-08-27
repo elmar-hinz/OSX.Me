@@ -11,6 +11,9 @@ homebrew_packages:
   - vimpager
   - docker
   - docker-compose
+  - php56
+  - composer
+  - npm
 
 homebrew_casks:
   - alfred
