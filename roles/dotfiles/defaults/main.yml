@@ -2,3 +2,5 @@
 # Your local dotfiles git repository will go here:
 dotfiles_repository_destination: '~/.my.dotfiles'
 
+# Your private dotfiles folder if any
+dotfiles_private_destination: '~/.private.dotfiles'

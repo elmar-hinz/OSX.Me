@@ -7,20 +7,38 @@
      accept_hostkey=yes
 
 - name: Linking Dotfiles
-  file: state=link src={{ item }} 
-    dest={{ ansible_env.HOME }}/{{ item | basename }} 
+  file: state=link src={{ item }}
+    dest={{ ansible_env.HOME }}/{{ item | basename }}
     force=yes
-  with_lines: 
+  with_lines:
       test -e {{ dotfiles_repository_destination }}
       && find {{ dotfiles_repository_destination }}
-      -depth 1 
+      -depth 1
       -and \( -type f -or -type d -or -type l \)
-      -and -name ".*" 
+      -and -name ".*"
       -and ! \(
-          -name ".DS_Store" 
-          -or -name ".git"  
-          -or -name ".gitignore"  
-          -or -name ".gitmodules"  
+          -name ".DS_Store"
+          -or -name ".git"
+          -or -name ".gitignore"
+          -or -name ".gitmodules"
+      \)
+      || true
+
+- name: Linking Private Dotfiles
+  file: state=link src={{ item }}
+    dest={{ ansible_env.HOME }}/{{ item | basename }}
+    force=yes
+  with_lines:
+      test -e {{ dotfiles_private_destination }}/
+      && find {{ dotfiles_private_destination }}/
+      -depth 1
+      -and \( -type f -or -type d -or -type l \)
+      -and -name ".*"
+      -and ! \(
+          -name ".DS_Store"
+          -or -name ".git"
+          -or -name ".gitignore"
+          -or -name ".gitmodules"
       \)
       || true
 
