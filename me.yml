@@ -2,6 +2,8 @@
 
 - name: Me Playbook
   hosts: localhost
+  vars_files:
+      - config.yml
   roles:
     - bootstrap
     - software
@@ -10,4 +12,5 @@
       tags: dotfiles
     - role: private
       tags: private
+
 

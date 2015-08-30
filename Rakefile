@@ -19,9 +19,9 @@ task :private do
     system 'ansible-playbook me.yml --tags="private"'
 end
 
-desc "Quick run -  No upgrades, superuser or dotfiles"
+desc "Quick run -  No backup, upgrades, superuser or dotfiles"
 task :quick do
-    system 'ansible-playbook me.yml --skip-tags="upgrade,become,dotfiles"'
+    system 'ansible-playbook me.yml --skip-tags="backup,upgrade,become,dotfiles"'
 end
 
 desc "Full run"

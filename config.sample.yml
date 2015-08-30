@@ -1,9 +1,11 @@
-# `host_vars/localhost.yml` is the place to store your private configuration.
+# `config.yml` is the place to store your configuration.
 #
-# Copy `host_vars/localhost_sample.yml` to `host_vars/localhost.yml` to get started.
+# Simply copy `config.sample.yml` to `config.yml` to get started.
 # Customize to your neeeds. Overwrite the default vars of roles.
-# `host_vars/localhost.yml`  is excluded from the git repository by .gitignore.
+# Hint `config.yml` is excluded from the git repository by .gitignore.
 
+
+# The dotfile role is skipped until your dotfiles_repository is defined. 
 # dotfiles_repository: https://github.com/your-name/dotfiles.git  
 
 gems:
@@ -14,7 +16,9 @@ npms:
   - grunt
   - grunt-cli
 
-homebrew_taps: []
+homebrew_taps:
+  - homebrew/php
+  - homebrew/dupes
 
 homebrew_packages: 
   - tmux

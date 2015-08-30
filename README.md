@@ -1,6 +1,6 @@
 # Maintain my Mac with Ansible
 
-Status: alpha
+Status: beta
 
 ## Prerequests
 
@@ -18,11 +18,11 @@ ansible-playbook me.yml
 
 ## Configuration
 
-`host_vars/localhost.yml` is the place to store your private configuration.
+`config.yml` is the place to store your configuration.
 
-Copy `host_vars/localhost_sample.yml` to `host_vars/localhost.yml` to get started.
+Simply copy `config.sample.yml` to `config.yml` to get started.
 Customize to your neeeds. Overwrite the default vars of roles.
-`host_vars/localhost.yml`  is excluded from the git repository by `.gitignore`.
+Hint `config.yml` is excluded from the git repository by .gitignore.
 
 ## Contains so far
 
@@ -31,15 +31,25 @@ Customize to your neeeds. Overwrite the default vars of roles.
     * Ansible
     * Python
     * Ruby
+    * Node.js
     * Git
     * Bash
     * iTerm
 * Maintain user defined packages with the package managers:
+    * Npm
     * Homebrew
     * Homebrew Caskroom
     * Gem
 * Maintain all official Hombrew Completions
 * Maintain user dotfiles in a Git repository
+
+## Custom role
+
+You can create a custom role in `roles/private/`.
+The directory `private/` is just a dummy 
+to stop ansible from complaining.
+
+See `private/README.md`.
 
 ## Dotfile management 
 
