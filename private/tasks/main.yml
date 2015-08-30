@@ -1,0 +1,6 @@
+---
+
+- name: Private Dummy Role
+  debug: msg='This is a reminder that you can set up your private role. See private/README.md'
+
+

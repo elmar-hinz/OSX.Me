@@ -1,12 +1,13 @@
 ---
 
 - name: Me Playbook
-  hosts: localhost 
-  vars:
-    brew_upgrade: true
+  hosts: localhost
   roles:
     - bootstrap
     - software
-    - { role: dotfiles, when: dotfiles_repository is defined  }
-
+    - role: dotfiles
+      when: dotfiles_repository is defined
+      tags: dotfiles
+    - role: private
+      tags: private
 

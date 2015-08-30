@@ -4,13 +4,24 @@ task :default do
      puts `rake -T`
 end
 
+desc "Dotfiles - nothing else"
+task :dot do
+    system 'ansible-playbook me.yml --tags="dotfiles"'
+end
+
+desc "Private role onyz"
+task :private do
+    system 'ansible-playbook me.yml --tags="private"'
+end
+
+desc "Quick run -  No upgrades, superuser or dotfiles"
+task :quick do
+    system 'ansible-playbook me.yml --skip-tags="upgrade,become,dotfiles"'
+end
+
 desc "Full run"
-task :play do
+task :full do
     system 'ansible-playbook me.yml --ask-become-pass'
 end
 
-desc "Quick run -  No upgrades"
-task :quick do
-    system 'ansible-playbook me.yml --ask-become-pass --extra-vars="brew_upgrade=false"'
-end
 

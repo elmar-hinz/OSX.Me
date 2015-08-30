@@ -20,6 +20,8 @@
   homebrew_cask: name={{ item }} 
   with_items: "{{ homebrew_casks_become }}"
   become: true
+  tags:
+    - become
 
 - name: Maintain Gems
   gem: name={{ item }} 

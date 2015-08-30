@@ -1,4 +1,6 @@
 .DS_Store
+.rake_t_cache
+/roles/private
 # Private configuration goes here
 host_vars/localhost.yml
 

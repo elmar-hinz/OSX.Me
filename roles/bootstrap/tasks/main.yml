@@ -1,7 +1,8 @@
 
 - name: Update and upgrade Homebrew
   homebrew: update_homebrew=yes upgrade_all=yes
-  when: brew_upgrade
+  tags:
+    - upgrade
 
 - name: Tap Completitions
   homebrew_tap: tap=homebrew/completions
