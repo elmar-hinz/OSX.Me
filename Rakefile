@@ -4,6 +4,11 @@ task :default do
      puts `rake -T`
 end
 
+desc "Backup"
+task :backup do
+    system 'ansible-playbook me.yml --tags="backup"'
+end
+
 desc "Dotfiles - nothing else"
 task :dot do
     system 'ansible-playbook me.yml --tags="dotfiles"'
