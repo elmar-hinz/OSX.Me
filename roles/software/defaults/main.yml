@@ -1,16 +1,18 @@
 ---
 
+pips: []
+
 gems:
   - tmuxinator
-    
-npms: 
+
+npms:
   - bower
   - grunt
   - grunt-cli
 
 homebrew_taps: []
 
-homebrew_packages: 
+homebrew_packages:
   - tmux
   - vim
   - vimpager
@@ -25,7 +27,7 @@ homebrew_casks:
   - google-chrome
   - virtualbox
   - vagrant
-      
+
 homebrew_casks_become: []
 
 homebrew_completions:
@@ -52,6 +54,4 @@ homebrew_completions:
   - tmuxinator-completion
   - vagrant-completion
   - wpcli-completion
-
-
 

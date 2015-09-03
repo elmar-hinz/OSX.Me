@@ -5,8 +5,10 @@
 # Hint `config.yml` is excluded from the git repository by .gitignore.
 
 
-# The dotfile role is skipped until your dotfiles_repository is defined. 
-# dotfiles_repository: https://github.com/your-name/dotfiles.git  
+# The dotfile role is skipped until your dotfiles_repository is defined.
+# dotfiles_repository: https://github.com/your-name/dotfiles.git
+
+pips: []
 
 gems:
   - tmuxinator
@@ -16,16 +18,16 @@ npms:
   - grunt
   - grunt-cli
 
-homebrew_taps:
-  - homebrew/php
-  - homebrew/dupes
+homebrew_taps: []
 
-homebrew_packages: 
+homebrew_packages:
   - tmux
   - vim
   - vimpager
   - docker
   - docker-compose
+  - php56
+  - composer
 
 homebrew_casks:
   - alfred
@@ -33,8 +35,7 @@ homebrew_casks:
   - google-chrome
   - virtualbox
   - vagrant
-      
-# Casks that need admin priviledges
+
 homebrew_casks_become: []
 
 homebrew_completions:
