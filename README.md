@@ -54,7 +54,7 @@ See `private/README.md`.
 ## Dotfile management 
 
 * The Dotfile management is skipped until you define the variable 
-  `dotfiles_repository` in `host_vars/localhost.yml`
+  `dotfiles_repository` in `config.yml`
 * `dotfiles_repository` should point to your git dotfiles repository 
   i.e. https://github.com/your-name/dotfiles.git
 * It is cloned into `~/.my.dotfiles` by default.
