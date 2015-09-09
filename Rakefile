@@ -14,7 +14,7 @@ task :dot do
     system 'ansible-playbook me.yml --tags="dotfiles"'
 end
 
-desc "Private role onyz"
+desc "Private role only"
 task :private do
     system 'ansible-playbook me.yml --tags="private"'
 end
