@@ -9,19 +9,19 @@
 - name: Tap Caskroom
   homebrew_tap: tap=caskroom/cask
 
-- name: Maintain Homebrew Caskroom
-  homebrew: name=brew-cask
+# - name: Maintain Homebrew Caskroom
+#   homebrew: name=brew-cask
 
 - name: Maintain Build Tools
   homebrew: name=coreutils
 
-- name: Maintain Fundamental Commandline Tools 
+- name: Maintain Fundamental Commandline Tools
   homebrew: name=wget,htop-osx
 
-- name: Maintain Python 
+- name: Maintain Python
   homebrew: name=python
 
-- name: Maintain Ruby 
+- name: Maintain Ruby
   homebrew: name=ruby
 
 - name: Maintan node.js
@@ -36,6 +36,6 @@
 - name: Maintain Ansible
   homebrew: name=ansible
 
-- name: Maintain Iterm2 
+- name: Maintain Iterm2
   homebrew_cask: name=iterm2
 

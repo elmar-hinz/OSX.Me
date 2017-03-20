@@ -1,5 +1,6 @@
 .DS_Store
 .rake_t_cache
+me.retry
 
 # Private configuration goes here
 /roles/private

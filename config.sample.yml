@@ -43,7 +43,7 @@ homebrew_completions:
   - boom-completion
   - boot2docker-completion
   - bundler-completion
-  - ctest-completion
+  # - ctest-completion
   - django-completion
   - docker-completion
   - fabric-completion
